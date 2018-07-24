@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/symfony-master/src" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/symfony-master/tests" isTestSource="true" packagePrefix="App\Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/doctrine-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/doctrine-cache-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/doctrine-migrations-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/migrations" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/persistence" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/doctrine/reflection" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/ocramius/package-versions" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/ocramius/proxy-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/sensio/framework-extra-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/doctrine-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/dotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/flex" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/form" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/framework-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/intl" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/maker-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/orm-pack" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/polyfill-intl-icu" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/twig-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/twig-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/validator" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/web-profiler-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/zendframework/zend-code" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony-master/vendor/zendframework/zend-eventmanager" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
