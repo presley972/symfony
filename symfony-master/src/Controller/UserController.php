@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Article;
 use App\Entity\User;
 use App\Form\ProfileUserType;
 use App\Form\UserType;
@@ -87,6 +88,11 @@ class UserController extends Controller
      */
     public function remove(User $user, EntityManagerInterface $entityManager)
     {
+        $articles = $user->getArticles();
+        foreach ($articles as $article){
+            $article->setUser(null);
+        }
+
         $entityManager->remove($user);
         $entityManager ->flush();
         return $this->redirectToRoute('home');
