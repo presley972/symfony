@@ -25,7 +25,7 @@ class Article
 
     /**
      * @Assert\NotBlank()
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(unique=true)
      */
     private $title;
 

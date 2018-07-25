@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Form\ProfileUserType;
 use App\Form\UserType;
 use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -32,7 +34,7 @@ class UserController extends Controller
 
         $games = $userRepository->findAll();
 
-        return $this->render('user/index.html.twig', array(
+        return $this->render('security/admin.html.twig', array(
 
                 'form'=>$form->createView(),
                 'controller_name'=>"presley",
@@ -54,6 +56,40 @@ class UserController extends Controller
 
         );
 
+    }
+
+
+    /**
+     * @Route("/profile", name="profile")
+     */
+
+    public function profile(Request $request, EntityManagerInterface $entityManager){
+
+        $user = $this->getUser();
+        $form =$this->createForm(ProfileUserType::class, $user);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()){
+
+            $entityManager->persist($user);
+            $entityManager->flush();
+            return $this->redirectToRoute('home');
+        }
+
+        return $this->render('security/profile.html.twig',[
+            'form' => $form->createView()
+        ]);
+
+    }
+
+    /**
+     * @Route("/user/remove/{id}", name="user_remove")
+     */
+    public function remove(User $user, EntityManagerInterface $entityManager)
+    {
+        $entityManager->remove($user);
+        $entityManager ->flush();
+        return $this->redirectToRoute('home');
     }
 
 }

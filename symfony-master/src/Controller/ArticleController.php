@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Entity\Article;
 use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
+use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -37,5 +39,18 @@ class ArticleController extends Controller
             'article'=>$articles
         )
         );
+    }
+
+    /**
+     * @Route("/article/remove/{id}", name="article_remove")
+     * @ParamConverter("article", options={"mapping"={"id"="id"}})
+     */
+
+    public function remove(Article $article, EntityManagerInterface $entityManager){
+
+        $entityManager->remove($article);
+        $entityManager->flush();
+        return $this->redirectToRoute('home');
+
     }
 }

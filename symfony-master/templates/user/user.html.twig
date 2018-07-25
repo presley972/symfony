@@ -4,11 +4,40 @@
 
 {% block body %}
 
+    <a href="/">
+        home
+    </a>
+
+
     {% for article in user.articles %}
 
         <h1>{{ article.title }}</h1>
 
        <p> {{ article.content }} </p>
+<a href="
+{{ path('article_remove', {'id': article.id}) }}
+">suprimer </a>
 
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <p>
+                Email: {{ app.user.email }} </p>
+        {% else %}
+
+            <p>
+                Welcome Anonymous</p>
+        {% endif %}
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="/logout">
+            logout
+        </a>
     {% endfor %}
 {% endblock %}
